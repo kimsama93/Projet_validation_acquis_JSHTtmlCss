@@ -1,0 +1,155 @@
+.body {
+  margin: 2% 10% 2% 10%;
+  background-image: url("https://besthqwallpapers.com/img/original/126959/san-francisco-salesforce-tower-transbay-tower-181-fremont-street-skyscrapers.jpg");
+  background-attachment: fixed;
+  font-size: medium;
+}
+.logo {
+  max-width: 3rem;
+}
+
+.header {
+  border: black solid 1px;
+}
+
+.child_head {
+  font-size: large;
+  margin-bottom: 0;
+}
+/* ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+ul > li {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+} */
+
+.img_container {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.main_img {
+  width: 100%;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "groupe groupe objectifs"
+    "groupe groupe deroulement";
+}
+.para {
+  border: black solid 1px;
+  padding: 5px 5% 5px 5%;
+  background-color: azure;
+}
+.para:nth-child(1) {
+  grid-area: groupe;
+}
+.para:nth-child(2) {
+  grid-area: objectifs;
+}
+.para:nth-child(3) {
+  grid-area: deroulement;
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2% 0 2% 0;
+}
+.image_child {
+  width: 100%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "contact email";
+}
+
+.child_foot {
+  border: black solid 1px;
+  padding: 5px 5% 5px 5%;
+  background-color: azure;
+}
+
+.child_foot:nth-child(1) {
+  grid-area: contact;
+}
+.child_foot:nth-child(2) {
+  grid-area: email;
+}
+
+.para_footer {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.button {
+  margin-bottom: 5px;
+}
+
+.container {
+  background-color: aliceblue;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem auto 1rem auto;
+  border: black solid 1px;
+  min-width: 100%;
+}
+
+#bio {
+  width: 100%;
+}
+
+.voir-etudiant {
+  border: black solid 1px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.container_table {
+  overflow-x: auto;
+  max-width: 650px;
+}
+.table {
+  background-color: white;
+}
+.msg-err {
+  color: red;
+  font-style: italic;
+}
+
+@media all and (max-width: 780px) {
+  .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "groupe"
+      "objectifs"
+      "deroulement";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "contact "
+      "email";
+  }
+}
